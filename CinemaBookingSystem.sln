@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppTraining", "CppTraining.vcxproj", "{945899D1-3264-4334-AAB7-EA7312A2B695}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Debug|x64.ActiveCfg = Debug|x64
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Debug|x64.Build.0 = Debug|x64
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Debug|x86.ActiveCfg = Debug|Win32
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Debug|x86.Build.0 = Debug|Win32
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Release|x64.ActiveCfg = Release|x64
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Release|x64.Build.0 = Release|x64
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Release|x86.ActiveCfg = Release|Win32
+		{945899D1-3264-4334-AAB7-EA7312A2B695}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B4ECCC9-7A18-4618-8F22-1826C45616CC}
+	EndGlobalSection
+EndGlobal
