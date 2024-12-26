@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Buchungen.cpp" />
+    <ClCompile Include="Booking.cpp" />
     <ClCompile Include="Movie.cpp" />
     <ClCompile Include="Helper.cpp" />
     <ClCompile Include="Cinema.cpp" />
@@ -135,7 +135,7 @@
     <ClCompile Include="CinemaSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Buchungen.h" />
+    <ClInclude Include="Booking.h" />
     <ClInclude Include="Movie.h" />
     <ClInclude Include="Helper.h" />
     <ClInclude Include="CinemaHall.h" />

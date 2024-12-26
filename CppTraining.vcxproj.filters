@@ -24,7 +24,7 @@
     <ClCompile Include="CinemaHall.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Buchungen.cpp">
+    <ClCompile Include="Booking.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="CinemaSystem.cpp">
@@ -41,7 +41,7 @@
     <ClInclude Include="CinemaHall.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Buchungen.h">
+    <ClInclude Include="Booking.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="CinemaSystem.h">
