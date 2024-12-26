@@ -24,6 +24,7 @@
     <ProjectGuid>{945899d1-3264-4334-aab7-ea7312a2b695}</ProjectGuid>
     <RootNamespace>CppTraining</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BookingSystem</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -129,15 +130,16 @@
   <ItemGroup>
     <ClCompile Include="Booking.cpp" />
     <ClCompile Include="Movie.cpp" />
-    <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Cinema.cpp" />
     <ClCompile Include="CinemaHall.cpp" />
     <ClCompile Include="CinemaSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Booking.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="FileManager.h" />
     <ClInclude Include="Movie.h" />
-    <ClInclude Include="Helper.h" />
     <ClInclude Include="CinemaHall.h" />
     <ClInclude Include="CinemaSystem.h" />
   </ItemGroup>

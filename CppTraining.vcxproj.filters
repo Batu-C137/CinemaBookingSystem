@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{92cd4693-3a5c-41dd-ae98-8218f5ff3ac0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cinema.cpp">
@@ -30,8 +33,8 @@
     <ClCompile Include="CinemaSystem.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Helper.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Helper</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -47,8 +50,11 @@
     <ClInclude Include="CinemaSystem.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Helper.h">
-      <Filter>Headerdateien</Filter>
+    <ClInclude Include="FileManager.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>Helper</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -3,7 +3,8 @@
 #include "Movie.h"
 #include "CinemaSystem.h"
 #include <string>
-#include "Helper.h"
+#include "FileManager.h"
+#include "Exceptions.h"
 
 using namespace std;
 
@@ -26,7 +27,7 @@ int main()
     CinemaSystem cinemaSystem;
     Movie movie;
     CinemaHall cinemaHall;
-    Helper helper;
+    FileManager fileManager;
     int option = 0;
     string optin_s;
     string info[4];
@@ -55,9 +56,22 @@ int main()
         {
         case 1:
             Clear();
-            List = helper.ReadFile(helper.movieListName);
+            try
+            {
+
+            }
+            catch (CinemaException e)
+            {
+                e.what();
+            }
+            List = fileManager.ReadFile(fileManager.movieListName);
             for (const string movie : List)
             {
+                if (movie.empty())
+                {
+                    CinemaException e("List is empty.");
+                    e.what();
+                }
                 cout << movie << '\n';
             }
 
@@ -97,7 +111,7 @@ int main()
             break;
         case 2:
             Clear();           
-            List = helper.ReadFile(helper.cinemaHalllistName);
+            List = fileManager.ReadFile(fileManager.cinemaHalllistName);
             for (const string hallInfo : List)
             {
                 cout << hallInfo << '\n';
@@ -120,7 +134,7 @@ int main()
             break;
         case 3:
             Clear();
-            List = helper.ReadFile(helper.bookingList);
+            List = fileManager.ReadFile(fileManager.bookingList);
             for (const string bookingInfo : List)
             {
                 cout << bookingInfo << "\t";
@@ -140,7 +154,7 @@ int main()
         case 4:
             Clear();
             i = 0;
-            List = helper.ReadFile(helper.cinemaHalllistName);
+            List = fileManager.ReadFile(fileManager.cinemaHalllistName);
             for (int j = 0; j < List.size(); j++)
             {
                 cout << List[j][i] << "\t";

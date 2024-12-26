@@ -5,7 +5,7 @@
 #include<string>
 #include "Movie.h"
 #include "CinemaHall.h"
-#include "Helper.h"
+#include "FileManager.h"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ class CinemaSystem
 {
 private:
 	vector<Movie> filme;
-	Helper helper;
+	FileManager fileManager;
 public:
 	CinemaSystem();
 	~CinemaSystem();

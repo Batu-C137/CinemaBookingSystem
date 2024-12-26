@@ -1,9 +1,9 @@
-#include"Helper.h"
+#include "FileManager.h"
 
-Helper::Helper(){}
-Helper::~Helper(){}
+FileManager::FileManager(){}
+FileManager::~FileManager(){}
 
-bool Helper::WriteFile(string& text, string& fileName)
+bool FileManager::WriteFile(string& text, string& fileName)
 {   
     string pathName = path + fileName;
     // Erstellen eines ofstream-Objekts mit dem angegebenen Pfad
@@ -24,7 +24,7 @@ bool Helper::WriteFile(string& text, string& fileName)
     return true;
 }
 
-bool Helper::WriteFile(string& text, string& fileName, string& header)
+bool FileManager::WriteFile(string& text, string& fileName, string& header)
 {
     string pathName = path + fileName;
 
@@ -67,7 +67,7 @@ bool Helper::WriteFile(string& text, string& fileName, string& header)
     return true;
 }
 
-vector<string> Helper::ReadFile(string& fileName)
+vector<string> FileManager::ReadFile(string& fileName)
 {    
     string pathName = path + fileName;
     ifstream data(pathName);
