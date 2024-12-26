@@ -11,7 +11,7 @@ using namespace std;
 class FileManager
 {
 private:
-    const string path = "./Kinosystem/"; // Relativer Pfad zum Projektverzeichnis
+    const string path = "./CinemaFiles/"; // Relativer Pfad zum Projektverzeichnis
     vector<string> movies;
 public:
     FileManager();
