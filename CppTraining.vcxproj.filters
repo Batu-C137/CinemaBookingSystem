@@ -53,8 +53,5 @@
     <ClInclude Include="FileManager.h">
       <Filter>Helper</Filter>
     </ClInclude>
-    <ClInclude Include="Exceptions.h">
-      <Filter>Helper</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

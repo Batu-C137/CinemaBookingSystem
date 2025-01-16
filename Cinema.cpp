@@ -4,7 +4,6 @@
 #include "CinemaSystem.h"
 #include <string>
 #include "FileManager.h"
-#include "Exceptions.h"
 
 using namespace std;
 
@@ -58,21 +57,23 @@ int main()
             Clear();
             try
             {
+                List = fileManager.ReadFile(fileManager.movieListName);
 
-            }
-            catch (CinemaException e)
-            {
-                e.what();
-            }
-            List = fileManager.ReadFile(fileManager.movieListName);
-            for (const string movie : List)
-            {
-                if (movie.empty())
+                if (List.empty())
                 {
-                    CinemaException e("List is empty.");
-                    e.what();
+                    throw exception("List is empty.");
                 }
-                cout << movie << '\n';
+                else
+                {
+                    for (const string movie : List)
+                    {
+                        cout << movie << '\n';
+                    }
+                }
+            }
+            catch (exception& e)
+            {
+                cerr << e.what() << endl;
             }
 
             cout << "\n\n1.Add film" << endl;

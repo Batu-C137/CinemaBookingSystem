@@ -137,7 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Booking.h" />
-    <ClInclude Include="Exceptions.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Movie.h" />
     <ClInclude Include="CinemaHall.h" />

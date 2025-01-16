@@ -11,7 +11,7 @@ bool FileManager::WriteFile(string& text, string& fileName)
 
     if (!data)
     {
-        cerr << "Die Datei konnte nicht geoeffnet werden!" << endl;
+        cerr << "File couldn´t be opened!" << endl;
         return false;
     }
 
@@ -48,18 +48,23 @@ bool FileManager::WriteFile(string& text, string& fileName, string& header)
 
     if (!data)
     {
-        cerr << "Die Datei konnte nicht geoeffnet werden!" << endl;
+        cerr << "File couldn´t be opened!" << endl;
         return false;
     }
 
-    //if (write)
-    //{
-    //    data << header + "\n\n";
-    //}
-    /////////////////////////////////////////if file dont exists create and write one time else dont write -> already written
+    // Zeilen in der Datei zählen, um die Nummerierung zu bestimmen
+    int lineCount = 0;
+    string line;
+    ifstream inFile(pathName);
+    while (getline(inFile, line))
+    {
+        if (!line.empty()) // Leere Zeilen ignorieren
+            lineCount++;
+    }
+    inFile.close();
 
     // Schreiben von Text in die Datei
-    data << text + '\n';
+    data << lineCount << ". " << text + '\n';
 
     // Datei schließen
     data.close();
@@ -77,7 +82,7 @@ vector<string> FileManager::ReadFile(string& fileName)
     // Überprüfen, ob die Datei erfolgreich geöffnet wurde
     if (!data)
     {
-        cerr << "Fehler beim Oeffnen der Datei." << std::endl;
+        cerr << "Error : file does not exist." << std::endl;
         return movies;
     }
 
