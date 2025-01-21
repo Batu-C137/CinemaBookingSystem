@@ -20,7 +20,7 @@ public:
     string cinemaHalllistName = "CinemaHall.txt";
     string bookingList = "Bookings.txt";
     bool WriteFile(string& text, string& fileName);
-    bool WriteFile(string& text, string& fileName, string& header);
+    bool WriteFile(string& text, string& fileName, string* header);
     vector<string> ReadFile(string& fileName);
 };
 

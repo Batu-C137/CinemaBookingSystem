@@ -24,12 +24,13 @@ bool FileManager::WriteFile(string& text, string& fileName)
     return true;
 }
 
-bool FileManager::WriteFile(string& text, string& fileName, string& header)
+bool FileManager::WriteFile(string& text, string& fileName, string* header)
 {
     string pathName = path + fileName;
 
     // Erstellen eines ofstream-Objekts mit dem angegebenen Pfad
     ifstream check(pathName);
+
     if (!check.is_open()) 
     {
         ofstream data(pathName);
@@ -48,7 +49,7 @@ bool FileManager::WriteFile(string& text, string& fileName, string& header)
 
     if (!data)
     {
-        cerr << "File couldn´t be opened!" << endl;
+        cerr << "File could not be opened!" << endl;
         return false;
     }
 
