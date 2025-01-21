@@ -1,1 +1,1 @@
-Cinema booking system console App.
+Cinema booking system console app.
