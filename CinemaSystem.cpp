@@ -14,7 +14,7 @@ void CinemaSystem::AddMovie(const Movie& movie)
 {
 	string movieInfo = "\t\t" + movie.getTitel() + "\t\t\t" + movie.getGenre() + "\t\t\t" + to_string(movie.getDauer());
 	//string header = "Nr:\t\tTitel:\t\t\tGenre:\t\t\tLength(min.):";
-	string header[4] = { "Nr:", "Titel:", "Genre:", "Length(min.):" }; // new header
+	string header[4] = { "Nr:", "Titel:", "Genre:", "Length(min.):" }; // implement new header
 	fileManager.WriteFile(movieInfo, fileManager.movieListName, header);
 }
 
